@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigationView">
+
+        <ImageView
+            android:id="@+id/homeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/homeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_left"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                app:civ_border_color="#000000"
+                app:civ_border_width="4dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="95dp"
+                android:layout_toRightOf="@id/profile_left"
+                app:srcCompat="@drawable/heart_img" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_right"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="70dp"
+                android:gravity="center"
+                app:civ_border_color="#000000"
+                app:civ_border_width="4dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserratalternates_black"
+                android:textColor="#EAEAEA"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_behavior="tech.thdev.app.view.BottomNavigationBehavior"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</RelativeLayout>

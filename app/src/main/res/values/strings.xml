@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">US_Project</string>
+    <string name="title_activity_sub">SubActivity</string>
+
+    <string-array name="LAN">
+        <item>"프로필사진 선택"</item>
+        <item>"프로필사진 삭제"</item>
+        <item>"프로필이름 수정"</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
